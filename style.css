@@ -146,6 +146,34 @@ a {
     text-decoration-thickness: 2px;
 }
 
+.point.current {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.ms-logo {
+    width: 17px;
+    height: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    flex: 0 0 17px;
+}
+
+.point.current > div { text-align: left; }
+
+@media (max-width: 600px) {
+    .point.current { flex-direction: row; gap: 10px; }
+}
+
 /* Generic styles */
 
 .break {
