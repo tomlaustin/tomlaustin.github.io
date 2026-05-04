@@ -148,7 +148,7 @@ a {
 
 .point.current {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     padding: 12px 0;
     text-align: left;
@@ -166,6 +166,7 @@ a {
     background-color: transparent;
     padding: 0;
     flex: 0 0 17px;
+    margin-top: 2px;
 }
 
 .point.current > div { text-align: left; }
