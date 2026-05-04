@@ -19,9 +19,9 @@
 /* Page styles */
 
 html {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -69,7 +69,7 @@ a {
 /* Title styles */
 
 .title h1 {
-    font-size: 60px;
+    font-size: clamp(28px, 6vw, 60px);
     font-weight: bold;
     color: var(--primary);
 }
@@ -81,6 +81,10 @@ a {
 
 .links, .bio {
     margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    body { padding: 16px; }
 }
 
 .links .icon {
